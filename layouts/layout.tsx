@@ -40,6 +40,7 @@ export const Layout: React.VFC<Props> = ({
           <div className="flex mt-2">
             <a href={BLOG.socialLink || "#"} className="flex">
               {/* 删除了图像元素 */}
+              <span className="block">/&nbsp;</span>
               <p className="md:block ml-2">{BLOG.author}</p>
             </a>
             <span className="block">&nbsp;/&nbsp;</span>
@@ -57,6 +58,7 @@ export const Layout: React.VFC<Props> = ({
               ))}
             </div>
           )}
+          <hr className="border-gray-200 dark:border-gray-600" />
         </nav>
       )}
       {blockMap && (
@@ -64,7 +66,6 @@ export const Layout: React.VFC<Props> = ({
           <NotionRenderer recordMap={blockMap} />
         </div>
       )}
-      <hr className="border-gray-200 dark:border-gray-600" />
     </article>
   );
   
