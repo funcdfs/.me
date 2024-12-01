@@ -3,7 +3,7 @@
  */
 const BLOG = {
   title: "funcdfs",
-  author: "funcdfs@gmail.com",
+  author: "funcdfs",
   email: "funcdfs@gmail.com",
   link: "https://lifef.vercel.app/",
   externalLink: "https://github.com/funcdfs", // make redirect link to /link page
@@ -11,7 +11,7 @@ const BLOG = {
   description:
     "blog",
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  appearance: "light", // ['light', 'dark'],
+  appearance: "dark", // ['light', 'dark'],
   font: "sans-serif", // ['sans-serif', 'serif']
   lightBackground: "#ffffff", // use hex value, don't forget '#' e.g #fffefc
   darkBackground: "#040808", // use hex value, don't forget '#'
@@ -24,7 +24,7 @@ const BLOG = {
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: "https://simple-og-image.vercel.app", // The link to generate OG image, don't end with a slash
   // detail: https://github.com/yokinist/og-image/blob/main/api/_lib/types.ts#L2-L12
-  socialLink: "https://twitter.com/funcdfs",
+  socialLink: "mailto:funcdfs@gmail.com",
   seo: {
     keywords: ["funcdfs"],
     googleSiteVerification: "", // Remove the value or replace it with your own google site verification code
