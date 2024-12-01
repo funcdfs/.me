@@ -20,50 +20,35 @@ type TagData = {
 };
 
 const TAG_DATA: Record<TagSlug, TagData> = {
-  [TAG_SLUGS.News]: {
-    name: "News", // Display name
-    emoji: "📰", // Emoji
-    slug: TAG_SLUGS.News, // Slug
-  },
-  [TAG_SLUGS.Cooking]: {
-    name: "Cooking",
-    emoji: "🍳",
-    slug: TAG_SLUGS.Cooking,
+  [TAG_SLUGS.Movie]: {
+    name: "Movie", // Display name
+    emoji: "🎬", // Emoji
+    slug: TAG_SLUGS.Movie, // Slug
   },
   [TAG_SLUGS.Music]: {
     name: "Music",
     emoji: "🎵",
     slug: TAG_SLUGS.Music,
   },
-  [TAG_SLUGS.Design]: {
-    name: "Design",
-    emoji: "🎨",
-    slug: TAG_SLUGS.Design,
-  },
-  [TAG_SLUGS.Link]: {
-    name: "Link",
-    emoji: "🔗",
-    slug: TAG_SLUGS.Link,
+  [TAG_SLUGS.Food]: {
+    name: "Food",
+    emoji: "🧀",
+    slug: TAG_SLUGS.Food,
   },
   [TAG_SLUGS.Book]: {
     name: "Book",
     emoji: "📚",
     slug: TAG_SLUGS.Book,
   },
-  [TAG_SLUGS.Art]: {
-    name: "Art",
-    emoji: "🖼",
-    slug: TAG_SLUGS.Art,
+  [TAG_SLUGS.Link]: {
+    name: "Link",
+    emoji: "🔗",
+    slug: TAG_SLUGS.Link,
   },
-  [TAG_SLUGS.Food]: {
-    name: "Food",
-    emoji: "🍙",
-    slug: TAG_SLUGS.Food,
-  },
-  [TAG_SLUGS.Tech]: {
-    name: "Tech",
-    emoji: "💻",
-    slug: TAG_SLUGS.Tech,
+  [TAG_SLUGS.Tourist]: {
+    name: "Tourist",
+    emoji: "⛰️",
+    slug: TAG_SLUGS.Tourist,
   },
   [TAG_SLUGS.All]: {
     name: "All",
