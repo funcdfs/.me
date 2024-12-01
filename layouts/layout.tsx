@@ -36,7 +36,7 @@ export const Layout: React.VFC<Props> = ({
         {post.title}
       </h1>
       {post?.type?.[0] !== "Page" && (
-        <nav className="flex items-center mt-5 mb-4 text-gray-500 dark:text-gray-300">
+        <nav className="flex items-center mt-5 mb-4 text-indigo-400 dark:text-gray-300">
           <div className="flex mt-2">
             <a href={BLOG.socialLink || "#"} className="flex">
               {/* 删除了图像元素 */}
@@ -64,6 +64,7 @@ export const Layout: React.VFC<Props> = ({
           <NotionRenderer recordMap={blockMap} />
         </div>
       )}
+      <hr className="border-gray-200 dark:border-gray-600" />
     </article>
   );
   
