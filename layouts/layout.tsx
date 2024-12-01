@@ -36,13 +36,9 @@ export const Layout: React.VFC<Props> = ({
         {post.title}
       </h1>
       {post?.type?.[0] !== "Page" && (
-        <nav className="flex items-center mt-5 mb-4 text-indigo-400 dark:text-gray-300">
+        <nav className="flex items-center mt-5 mb-4 text-indigo-400">
           <div className="flex mt-2">
-            <a href={BLOG.socialLink || "#"} className="flex">
-              {/* 删除了图像元素 */}
-              <span className="block">/&nbsp;</span>
-              <p className="md:block ml-2">{BLOG.author}</p>
-            </a>
+            <p className="md:block ml-2">{BLOG.author}</p>
             <span className="block">&nbsp;/&nbsp;</span>
             <div className="mr-2 md:ml-0">
               {formatDate(
@@ -58,7 +54,6 @@ export const Layout: React.VFC<Props> = ({
               ))}
             </div>
           )}
-          <hr className="border-gray-200 dark:border-gray-600" />
         </nav>
       )}
       {blockMap && (
@@ -68,8 +63,6 @@ export const Layout: React.VFC<Props> = ({
       )}
     </article>
   );
-  
-
   return onlyContents ? (
     renderContents()
   ) : (
@@ -84,7 +77,7 @@ export const Layout: React.VFC<Props> = ({
     >
       {renderContents()}
       <div className="mb-4">
-        <div> </div>
+        <div>---</div>
         <div className="flex">
         </div>
       </div>
