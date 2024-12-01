@@ -3,15 +3,12 @@ import { ValueOf } from "lib/types";
 // NOTE: you can customize tags to match the tags in your Notion database
 const TAG_SLUGS = {
   All: "all",
-  Cooking: "cooking",
-  Art: "art",
-  Music: "music",
-  Design: "design",
-  Book: "book",
-  Food: "food",
+  Movie: "影视",
+  Music: "音乐",
+  Food: "食物存档",
+  Book: "读后感",
+  Tourist: "旅游记录",
   Link: "link",
-  News: "news",
-  Tech: "tech",
 } as const;
 
 export type TagSlug = ValueOf<typeof TAG_SLUGS>;
