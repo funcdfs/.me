@@ -17,7 +17,7 @@ export const BlogPost: React.VFC<Props> = ({ post }) => {
     return (
       <article
         key={post.id}
-        className="mt-2 mb-6 md:mb-8 hover:opacity-90 transition-transform ease-out hover:scale-105"
+        className="mt-2 mb-6 md:mb-8 hover:opacity-90 transition-transform ease-out hover:scale-102"
       >
         <header>
           <time className="text-gray-600 dark:text-gray-400 text-sm mb-2 inline-block">
