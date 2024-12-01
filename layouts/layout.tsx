@@ -41,9 +41,9 @@ export const Layout: React.VFC<Props> = ({
             <a href={BLOG.socialLink || "#"} className="flex">
               <Image
                 alt={BLOG.author}
-                width={24}
-                height={24}
-                src={`https://cdn.acwing.com/media/user/profile/photo/101476_lg_95be6185fb.jpg`}
+                width={22}
+                height={22}
+                src={`https://avatars.githubusercontent.com/u/56250171?v=4`}
                 className="rounded-full"
               />
               <p className="md:block ml-2">{BLOG.author}</p>
