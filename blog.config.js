@@ -2,12 +2,12 @@
  * @type {import('~/types').BlogConfig}
  */
 const BLOG = {
-  title: "@funcdfs",
+  title: "funcdfs",
   author: "funcdfs",
   email: "funcdfs@gmail.com",
-  link: "https://github.com/funcdfs",
+  link: "https://lifef.vercel.app/",
   externalLink: "https://github.com/funcdfs", // make redirect link to /link page
-  repository: "https://github.com/funcdfs/.me",
+  repository: "https://github.com/funcdfs",
   description:
     "blog",
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']

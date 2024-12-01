@@ -8,6 +8,7 @@ const TAG_SLUGS = {
   Food: "食物存档",
   Book: "读后感",
   Tourist: "旅游记录",
+  Tech: "技术",
   Link: "link",
 } as const;
 
@@ -49,6 +50,11 @@ const TAG_DATA: Record<TagSlug, TagData> = {
     name: "Tourist",
     emoji: "⛰️",
     slug: TAG_SLUGS.Tourist,
+  },
+  [TAG_SLUGS.Tech]: {
+    name: "Tech",
+    emoji: "💻",
+    slug: TAG_SLUGS.Tech,
   },
   [TAG_SLUGS.All]: {
     name: "All",
