@@ -39,17 +39,15 @@ export const Layout: React.VFC<Props> = ({
         <nav className="flex items-center mt-5 mb-4 text-gray-500 dark:text-gray-300">
           <div className="flex mt-2">
             <a href={BLOG.socialLink || "#"} className="flex">
-              <p className="md:block font-medium text-lg text-gray-700 dark:text-gray-200">
-                {/* 增加字体大小和颜色以便区分 */}
+              <p className="md:block font-medium text-lg text-indigo-400 dark:text-indigo-300">
+                {/* 设置为浅紫色蓝色，不添加下划线 */}
                 {BLOG.author}
               </p>
             </a>
             <span className="block text-gray-400 dark:text-gray-500 mx-2">
-              {/* 调整分隔符的颜色，保持与文字区分 */}
               &nbsp;/&nbsp;
             </span>
-            <div className="mr-2 md:ml-0 text-sm text-gray-500 dark:text-gray-400">
-              {/* 修改日期部分的字体大小和颜色 */}
+            <div className="mr-2 md:ml-0 text-gray-500 dark:text-gray-400">
               {formatDate(
                 post?.date?.start_date || post.createdTime,
                 BLOG.lang,
@@ -72,6 +70,7 @@ export const Layout: React.VFC<Props> = ({
       )}
     </article>
   );
+  
   
   
   return onlyContents ? (
