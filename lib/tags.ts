@@ -27,7 +27,7 @@ const TAG_DATA: Record<TagSlug, TagData> = {
     slug: TAG_SLUGS.Game, // Slug
   },
   [TAG_SLUGS.TV]: {
-    name: "TV",
+    name: "Film & TV",
     emoji: "🎬",
     slug: TAG_SLUGS.TV,
   },
