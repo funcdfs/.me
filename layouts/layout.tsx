@@ -29,40 +29,45 @@ export const Layout: React.VFC<Props> = ({
 }) => {
   const locale = useLocale();
   const router = useRouter();
-
   const renderContents = () => (
-    <article className="mt-4 mb-8 md:mt-0">
-      <h1 className="md:text-3xl text-2xl font-bold text-black dark:text-white">
+    <article className="mt-6 mb-8 md:mt-0 max-w-4xl mx-auto">
+      {/* 文章标题 */}
+      <h1 className="text-3xl font-bold text-black dark:text-white mb-4">
         {post.title}
       </h1>
+  
       {post?.type?.[0] !== "Page" && (
-        <nav className="flex items-center mt-5 mb-4 text-gray-500 dark:text-gray-300">
-          <div className="flex mt-2">
-            <a href={BLOG.socialLink || "#"} className="flex">
-              <p className="md:block font-medium text-lg text-indigo-400 dark:text-indigo-300">
-                {/* 设置为浅紫色蓝色，不添加下划线 */}
+        <nav className="flex items-center justify-start mt-4 text-gray-500 dark:text-gray-300">
+          {/* 作者和日期部分 */}
+          <div className="flex items-center space-x-4">
+            {/* 作者 */}
+            <a href={BLOG.socialLink || "#"} className="flex items-center">
+              <p className="font-medium text-lg text-indigo-400 dark:text-indigo-300 underline">
                 {BLOG.author}
               </p>
             </a>
-            <span className="block text-gray-400 dark:text-gray-500 mx-2">
-              &nbsp;/&nbsp;
-            </span>
-            <div className="mr-2 md:ml-0 text-gray-500 dark:text-gray-400">
-              {formatDate(
-                post?.date?.start_date || post.createdTime,
-                BLOG.lang,
-              )}
+  
+            {/* 分隔符 */}
+            <span className="text-gray-400 dark:text-gray-500">/</span>
+  
+            {/* 日期 */}
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              {formatDate(post?.date?.start_date || post.createdTime, BLOG.lang)}
             </div>
           </div>
-          {post.tags && (
-            <div className="mt-2 mb-1 flex overflow-x-auto flex-nowrap max-w-full article-tags">
-              {post.tags.map((tag) => (
-                <TagItem key={tag} tag={tag} />
-              ))}
-            </div>
-          )}
         </nav>
       )}
+  
+      {/* 文章标签部分，确保对齐并调整间距 */}
+      {post.tags && (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {post.tags.map((tag) => (
+            <TagItem key={tag} tag={tag} />
+          ))}
+        </div>
+      )}
+  
+      {/* 文章内容块 */}
       {blockMap && (
         <div className="-mt-4 mb-4 notion-ignore-padding-x">
           <NotionRenderer recordMap={blockMap} />
@@ -70,7 +75,7 @@ export const Layout: React.VFC<Props> = ({
       )}
     </article>
   );
-  
+    
   
   
   return onlyContents ? (
