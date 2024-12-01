@@ -39,14 +39,8 @@ export const Layout: React.VFC<Props> = ({
         <nav className="flex items-center mt-5 mb-4 text-gray-500 dark:text-gray-300">
           <div className="flex mt-2">
             <a href={BLOG.socialLink || "#"} className="flex">
-              <Image
-                alt={BLOG.author}
-                width={22}
-                height={22}
-                src={`https://avatars.githubusercontent.com/u/56250171?v=4`}
-                className="rounded-full"
-              />
-              <p className="md:block ml-2">{BLOG.author}</p>
+              {/* 删除了 Image 组件 */}
+              <p className="md:block">{BLOG.author}</p>
             </a>
             <span className="block">&nbsp;/&nbsp;</span>
             <div className="mr-2 md:ml-0">
@@ -72,6 +66,7 @@ export const Layout: React.VFC<Props> = ({
       )}
     </article>
   );
+  
   return onlyContents ? (
     renderContents()
   ) : (
