@@ -3,7 +3,7 @@
  */
 const BLOG = {
   title: "funcdfs",
-  author: "funcdfs",
+  author: "funcdfs@gmail.com",
   email: "funcdfs@gmail.com",
   link: "https://lifef.vercel.app/",
   externalLink: "https://github.com/funcdfs", // make redirect link to /link page
