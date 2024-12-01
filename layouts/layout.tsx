@@ -43,7 +43,7 @@ export const Layout: React.VFC<Props> = ({
                 alt={BLOG.author}
                 width={24}
                 height={24}
-                src={`https://gravatar.com/avatar/${emailHash}`}
+                src={`https://cdn.acwing.com/media/user/profile/photo/101476_lg_95be6185fb.jpg`}
                 className="rounded-full"
               />
               <p className="md:block ml-2">{BLOG.author}</p>
