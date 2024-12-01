@@ -5,7 +5,7 @@ const TAG_SLUGS = {
   All: "all",
   Game: "游戏",
   TV: "电影与电视",
-  Book: " 书籍",
+  Book: "书籍",
   Photography: "摄影",
   Travel: "旅游记录",
   Food: "美食",
