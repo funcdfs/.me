@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-  background: #79ffe1 !important;
+  background: #006efe !important;
 }
 
 .wrapper {
@@ -216,4 +216,9 @@ pre[class*=language-] {
 
 .notion-page a {
   color: #dfab01; 
+}
+
+article:hover {
+  transform: none !important; /* 禁止 hover 时的缩放 */
+  transition: none !important; /* 禁用过渡效果 */
 }
