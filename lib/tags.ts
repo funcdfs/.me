@@ -3,12 +3,12 @@ import { ValueOf } from "lib/types";
 // NOTE: you can customize tags to match the tags in your Notion database
 const TAG_SLUGS = {
   All: "all",
-  Movie: "影视",
-  Music: "音乐",
-  Food: "食物存档",
-  Book: "读后感",
-  Tourist: "旅游记录",
-  Tech: "技术",
+  Game: "游戏",
+  TV: "电影与电视",
+  Book: " 书籍",
+  Photography: "摄影",
+  Travel: "旅游记录",
+  Food: "美食",
   Link: "link",
 } as const;
 
@@ -21,40 +21,40 @@ type TagData = {
 };
 
 const TAG_DATA: Record<TagSlug, TagData> = {
-  [TAG_SLUGS.Movie]: {
-    name: "Movie", // Display name
-    emoji: "🎬", // Emoji
-    slug: TAG_SLUGS.Movie, // Slug
+  [TAG_SLUGS.Game]: {
+    name: "Game", // Display name
+    emoji: "🎮", // Emoji
+    slug: TAG_SLUGS.Game, // Slug
   },
-  [TAG_SLUGS.Music]: {
-    name: "Music",
-    emoji: "🎵",
-    slug: TAG_SLUGS.Music,
-  },
-  [TAG_SLUGS.Food]: {
-    name: "Food",
-    emoji: "🧀",
-    slug: TAG_SLUGS.Food,
+  [TAG_SLUGS.TV]: {
+    name: "TV",
+    emoji: "🎬",
+    slug: TAG_SLUGS.TV,
   },
   [TAG_SLUGS.Book]: {
     name: "Book",
     emoji: "📚",
     slug: TAG_SLUGS.Book,
   },
+  [TAG_SLUGS.Photography]: {
+    name: "Photography",
+    emoji: "📹",
+    slug: TAG_SLUGS.Photography,
+  },
+  [TAG_SLUGS.Travel]: {
+    name: "Travel",
+    emoji: "⛰️",
+    slug: TAG_SLUGS.Travel,
+  },
+  [TAG_SLUGS.Food]: {
+    name: "Food",
+    emoji: "🍽️",
+    slug: TAG_SLUGS.Food,
+  },
   [TAG_SLUGS.Link]: {
     name: "Link",
     emoji: "🔗",
     slug: TAG_SLUGS.Link,
-  },
-  [TAG_SLUGS.Tourist]: {
-    name: "Tourist",
-    emoji: "⛰️",
-    slug: TAG_SLUGS.Tourist,
-  },
-  [TAG_SLUGS.Tech]: {
-    name: "Tech",
-    emoji: "💻",
-    slug: TAG_SLUGS.Tech,
   },
   [TAG_SLUGS.All]: {
     name: "All",
